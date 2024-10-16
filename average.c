@@ -13,7 +13,6 @@ int main(int argc, char *argv[]) {
     }
 
     float sum = 0;
-
     // Loop through each command-line argument to calculate the sum
     // First arg starts at argv[1]
     int i;
@@ -22,9 +21,10 @@ int main(int argc, char *argv[]) {
     }
 
     // Calculate the average of all args
-    float average = sum / 10;
+    float average = sum / num_args;
 
     printf("Average: %.2f\n", average);
 
     return 0;
+
 }
